@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/detectSensorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detect Available Sensors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+    <TextView
+        android:id="@+id/sensorListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detectSensorsButton"
+        android:layout_marginTop="20dp"
+        android:text="Sensor List will appear here" />
+
+    <TextView
+        android:id="@+id/accelerometerData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorListTextView"
+        android:layout_marginTop="20dp"
+        android:text="Accelerometer: " />
+
+
+    <TextView
+        android:id="@+id/proximityData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accelerometerData"
+        android:layout_marginTop="20dp"
+        android:text="Proximity: " />
+
+    <TextView
+        android:id="@+id/lightData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proximityData"
+        android:layout_marginTop="20dp"
+        android:text="Light: " />
+
+
+    <TextView
+        android:id="@+id/orientationData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lightData"
+        android:layout_marginTop="20dp"
+        android:text="Orientation: " />
+</RelativeLayout>
